@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación de Proyectos | MAMCODE TECH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+    }
+    header p {
+      color: #58a6ff;
+      font-size: 18px;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .proyecto {
+      background-color: #161b22;
+      padding: 25px;
+      border-left: 5px solid #58a6ff;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+    .proyecto:hover {
+      transform: translateY(-10px);
+    }
+    .proyecto h2 {
+      font-size: 24px;
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+    .proyecto p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .tecnologias {
+      font-style: italic;
+      color: #8b949e;
+    }
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 20px;
+      color: #8b949e;
+      font-size: 14px;
+    }
+    .flecha {
+    font-size: 1.2rem;
+    display: inline-block;
+    position: fixed;        
+    top: 6%;               
+    left: 0;                
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>MAMCODE TECH</h1>
+    <p>Documentación de Proyectos Realizados</p>
+    <a href="javascript:history.back()" class="flecha">&#8592; Volver</a>
+  </header>
+
+  <main>
+    <div class="proyecto">
+      <h2> Plataforma de Gestión de Inventario</h2>
+      <p>Desarrollamos una aplicación web para automatizar el control de inventario en una empresa logística. La plataforma permite registrar, editar y consultar productos en tiempo real.</p>
+      <p class="tecnologias">Tecnologías: HTML, CSS, JavaScript, PHP, MySQL</p>
+    </div>
+
+    <div class="proyecto">
+      <h2> Aplicación Móvil de Soporte Técnico</h2>
+      <p>Creamos una app multiplataforma que permite a los usuarios recibir soporte técnico en vivo. Se incluyen funciones de ticketing, chat en línea y tutoriales automatizados.</p>
+      <p class="tecnologias">Tecnologías: Flutter, Firebase, Cloud Functions</p>
+    </div>
+
+    <div class="proyecto">
+      <h2> Sitio Web Educativo Interactivo</h2>
+      <p>Diseñamos un portal educativo para enseñar programación a estudiantes de nivel inicial con ejercicios prácticos, retroalimentación y logros desbloqueables.</p>
+      <p class="tecnologias">Tecnologías: React, Node.js, MongoDB, Tailwind CSS</p>
+    </div>
+
+    <div class="proyecto">
+      <h2> Sistema de Diagnóstico Inteligente</h2>
+      <p>Implementamos un sistema basado en reglas y aprendizaje automático para prediagnóstico técnico de fallas en sistemas informáticos.</p>
+      <p class="tecnologias">Tecnologías: Python, Scikit-learn, Flask, SQLite</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 MAMCODE. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>

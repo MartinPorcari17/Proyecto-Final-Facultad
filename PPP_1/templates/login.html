@@ -1,0 +1,19 @@
+<div class="auth-container">
+<link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+  <form class="auth-card" method="post">
+    <h2>Login</h2>
+
+    <label>Usuario</label>
+    <input type="text" name="username" required>
+
+    <label>Contraseña</label>
+    <input type="password" name="password" required>
+
+    <button type="submit">Ingresar</button>
+
+    <p class="auth-link">
+      ¿No tenés cuenta? <a href="{{ url_for('signup') }}">Registrate</a>
+    </p>
+  </form>
+</div>
+

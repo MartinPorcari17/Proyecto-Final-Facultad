@@ -1,0 +1,49 @@
+<h1>Panel de Consultas</h1>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>ID</th><th>Nombre</th><th>Email</th><th>Servicio</th><th>Mensaje</th><th>Acciones</th>
+  </tr>
+
+  {% for c in consultas %}
+  <tr>
+    <td>{{ c[0] }}</td>
+    <td>{{ c[1] }}</td>
+    <td>{{ c[2] }}</td>
+    <td>{{ c[4] }}</td>
+    <td>{{ c[5] }}</td>
+    <td>
+  <button class="btn-delete" data-id="{{ c[0] }}">Eliminar</button>
+
+  <button class="btn-edit"
+          data-id="{{ c[0] }}"
+          data-name="{{ c[1] }}"
+          data-message="{{ c[5] }}">
+    Editar
+  </button>
+</td>
+
+
+  </tr>
+  {% endfor %}
+</table>
+
+<script>
+function eliminar(id) {
+  if (!confirm('¿Eliminar consulta?')) return;
+
+  fetch(`/consulta/${id}`, { method: 'DELETE' })
+    .then(() => location.reload());
+}
+
+function editar(id, nombre, mensaje) {
+  const nuevoMensaje = prompt("Nuevo mensaje:", mensaje);
+  if (!nuevoMensaje) return;
+
+  fetch(`/consulta/${id}`, {
+    method: 'PUT',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ name: nombre, message: nuevoMensaje })
+  }).then(() => location.reload());
+}
+</script>
